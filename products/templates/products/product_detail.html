@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block contents%}
+
+    <h1>Product Title : {{ object.title}} </h1>
+    <p> Description :  {{ object.description}} </p>
+    <p> Price : {{ object.price}} $ </p>
+    <p> Summary : {{ object.summary}}</p>
+    <p> Featured : {{ object.featured }}</p>
+
+    <p><a href='../../products/'>Go Back To List</a>
+
+{% endblock %}

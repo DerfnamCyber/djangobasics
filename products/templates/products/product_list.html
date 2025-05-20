@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+
+<h1>List of all Products</h1>
+
+{% for instance in object_list %}
+
+    <h3>Product {{ instance.id}} -  <a href='{{ instance.get_absolute_url}}'> {{ instance.title}}</a> </h3>
+
+
+{% endfor%}
+
+{% comment "List" %}
+    Use instance in for loop to get specific items in database
+{% endcomment %}
+ 
+{% endblock %}
